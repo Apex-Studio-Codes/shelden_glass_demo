@@ -40,10 +40,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-full bg-sage flex items-center justify-center">
-                <span className="font-display text-cream text-sm font-semibold">SG</span>
-              </div>
+            <div className="flex items-center gap-3 mb-4">
+              <img
+                src="/logo.png"
+                alt="Shelden Glass"
+                className="w-10 h-10 rounded-full object-cover"
+              />
               <span className="font-display text-xl text-cream font-semibold">Shelden Glass</span>
             </div>
             <p className="font-body text-sm text-cream/50 leading-relaxed">

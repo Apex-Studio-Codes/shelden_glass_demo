@@ -19,10 +19,12 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="relative"
+          className="relative pt-4 pl-4"
         >
+          {/* Decorative corner accent */}
+          <div className="absolute top-0 left-0 w-32 h-32 border border-sage/20" />
           <div
-            className="w-full flex items-center justify-center"
+            className="relative z-10 w-full flex items-center justify-center"
             style={{ aspectRatio: '4/5', backgroundColor: '#e8f0ec' }}
           >
             <div className="text-center text-sage/30">
@@ -31,10 +33,6 @@ export default function About() {
               <p className="font-body text-xs text-sage/30 mt-1">[PLACEHOLDER — image to be added]</p>
             </div>
           </div>
-          <div
-            className="absolute -top-4 -left-4 w-32 h-32 border border-sage/20"
-            style={{ zIndex: -1 }}
-          />
         </motion.div>
 
         {/* Text */}

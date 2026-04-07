@@ -27,17 +27,18 @@ export default function Navbar() {
         boxShadow: scrolled ? '0 1px 20px rgba(44,58,51,0.10)' : '0 0 0 rgba(0,0,0,0)',
       }}
       transition={{ duration: 0.3 }}
-      className="fixed top-0 left-0 right-0 z-50"
-      style={{ paddingTop: '0' }}
+      className="w-full z-50"
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-full bg-sage flex items-center justify-center">
-            <span className="font-display text-cream text-sm font-semibold">SG</span>
-          </div>
+        <a href="#" className="flex items-center">
+          <img
+            src="/logo.png"
+            alt="Shelden Glass"
+            className="h-12 w-12 rounded-full object-cover"
+          />
           <span
-            className={`font-display text-xl font-semibold transition-colors duration-300 ${
+            className={`ml-3 font-display text-xl font-semibold transition-colors duration-300 hidden sm:block ${
               scrolled ? 'text-charcoal' : 'text-cream'
             }`}
           >
@@ -68,9 +69,7 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className={`md:hidden flex flex-col gap-1.5 cursor-pointer transition-colors duration-300 ${
-            scrolled ? 'text-charcoal' : 'text-cream'
-          }`}
+          className="md:hidden flex flex-col gap-1.5 cursor-pointer p-1"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >

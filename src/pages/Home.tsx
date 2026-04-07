@@ -16,8 +16,12 @@ import Contact from '../components/sections/Contact'
 export default function Home() {
   return (
     <>
-      <AnnouncementBanner />
-      <Navbar />
+      {/* Fixed header: banner + navbar stacked together so they don't overlap */}
+      <div className="fixed top-0 left-0 right-0 z-50">
+        <AnnouncementBanner />
+        <Navbar />
+      </div>
+
       <main>
         <Hero />
         <ShopCategories />

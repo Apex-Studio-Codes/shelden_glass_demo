@@ -57,10 +57,10 @@ export default function Wedding() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="relative"
+          className="relative pb-4 pr-4"
         >
           <div
-            className="w-full rounded-sm overflow-hidden flex items-center justify-center"
+            className="relative z-10 w-full rounded-sm overflow-hidden flex items-center justify-center"
             style={{ aspectRatio: '4/5', backgroundColor: '#4a7c65' }}
           >
             <div className="text-center text-cream/30">
@@ -71,8 +71,8 @@ export default function Wedding() {
           </div>
           {/* Decorative offset border */}
           <div
-            className="absolute -bottom-4 -right-4 w-full h-full border border-sage-light/30 rounded-sm -z-10"
-            style={{ aspectRatio: '4/5' }}
+            className="absolute bottom-0 right-0 border border-sage-light/30 rounded-sm"
+            style={{ width: 'calc(100% - 1rem)', height: 'calc(100% - 1rem)' }}
           />
         </motion.div>
       </div>

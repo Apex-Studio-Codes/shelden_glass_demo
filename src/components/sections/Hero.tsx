@@ -21,17 +21,18 @@ export default function Hero() {
       />
 
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto flex flex-col items-center">
-        {/* Circular badge */}
+        {/* Logo badge */}
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="w-28 h-28 rounded-full border-2 border-cream/30 flex flex-col items-center justify-center mb-8 bg-sage-dark/40 backdrop-blur-sm"
+          className="mb-8"
         >
-          <span className="font-display text-3xl text-cream font-light">SG</span>
-          <span className="font-body text-cream/60 text-[9px] tracking-widest uppercase mt-0.5">
-            Est. Somerset
-          </span>
+          <img
+            src="/logo.png"
+            alt="Shelden Glass"
+            className="w-40 h-40 rounded-full object-cover shadow-2xl"
+          />
         </motion.div>
 
         <motion.p
